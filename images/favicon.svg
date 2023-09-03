@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.0px"
+   height="48.0px"
+   viewBox="0 0 48.0 48.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="favicon.svg"
+   inkscape:export-filename="favicon.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview241"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="1.1703718"
+     inkscape:cx="-49.129688"
+     inkscape:cy="70.917636"
+     inkscape:window-width="1280"
+     inkscape:window-height="731"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid364" />
+  </sodipodi:namedview>
+  <defs
+     id="defs236" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#ffffff;stroke:#000000;stroke-width:3.26929;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect371"
+       width="30"
+       height="42"
+       x="8.8510313"
+       y="3.072716"
+       ry="6.9611235" />
+    <text
+       xml:space="preserve"
+       style="font-size:32px;fill:#ffffff;stroke:#000000;stroke-width:3.26929;stroke-linejoin:round;stroke-dasharray:none"
+       x="12.94937"
+       y="36.523628"
+       id="text987"><tspan
+         sodipodi:role="line"
+         id="tspan985"
+         x="12.94937"
+         y="36.523628"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Jomolhari;-inkscape-font-specification:Jomolhari;fill:#000000;fill-opacity:1">B</tspan></text>
+  </g>
+</svg>

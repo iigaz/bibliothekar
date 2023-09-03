@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bibliothekar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  </head>
+  <body>
+    <header>
+      <h1>Bibliothekar</h1>
+      <h3>Search books from Project Gutenberg</h3>
+    </header>
+    <main>
+      <form id="search-form">
+        <div class="search">
+          <select class="search-lang" id="search-lang">
+            <option value="">Any Language</option>
+            <option value="en">English</option>
+            <option value="ru">Russian</option>
+            <option value="zh">Chinese</option>
+            <option value="da">Danish</option>
+            <option value="nl">Dutch</option>
+            <option value="eo">Esperanto</option>
+            <option value="fi">Finnish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="el">Greek</option>
+            <option value="hu">Hungarian</option>
+            <option value="it">Italian</option>
+            <option value="la">Latin</option>
+            <option value="pt">Portuguese</option>
+            <option value="es">Spanish</option>
+            <option value="sv">Swedish</option>
+            <option value="tl">Tagalog</option>
+          </select>
+          <input class="search-box" placeholder="Search..." id="search-box" />
+          <select class="search-type" id="search-type">
+            <option value="title">Titles and Authors</option>
+            <option value="topic">Topics</option>
+          </select>
+          <div class="search-checkbox">
+            <input class="search-cf" type="checkbox" id="search-cf" />
+            <div class="search-checkbox-body" checked>Copyright-Free</div>
+          </div>
+          <button type="submit" class="search-button">
+            <i data-feather="search"></i>
+          </button>
+        </div>
+      </form>
+      <div class="bookshelf" id="bookshelf"></div>
+      <div class="load-more" id="load-more">
+        <button class="load-more-button" id="load-more-button">
+          Load more...
+        </button>
+      </div>
+      <div class="loader" id="loader">
+        <img src="images/loading.gif" alt="Loading..." />
+      </div>
+    </main>
+    <footer>
+      <p>
+        All books are taken from
+        <a href="https://www.gutenberg.org/">Project Gutenberg</a>
+      </p>
+      <p>Made using <a href="https://gutendex.com/">Gutendex</a></p>
+      <p>
+        Also check out
+        <a href="https://github.com/Pool-Of-Tears/Myne">Myne</a> for Android
+      </p>
+      <p>
+        <a
+          href="https://commons.wikimedia.org/wiki/File:Book_with_Lens_Flat_Icon_GIF_Animation.gif"
+        >
+          Book with Lens Flat Icon GIF Animation.gif
+        </a>
+        from
+        <a href="https://commons.wikimedia.org/wiki/Main_Page">
+          Wikimedia Commons
+        </a>
+        by <a href="https://videoplasty.com/"> Videoplasty.com </a>,
+        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
+          CC-BY-SA 4.0
+        </a>
+      </p>
+    </footer>
+    <div class="modal modal-closed">
+      <div class="modal-background"></div>
+      <div class="details-modal" id="details-modal">
+        <div class="details-cover">
+          <img
+            src="images/cover.jpg"
+            class="details-cover-image"
+            id="details-cover-image"
+          />
+          <img
+            src="images/pd.png"
+            class="details-cover-copyright details-cover-copyright-show"
+            id="details-cover-copyright"
+          />
+        </div>
+        <div class="details-desc">
+          <h1 id="details-title">My Awesome Book</h1>
+          <div class="details-description" id="details-description"></div>
+          <div class="details-subjects">
+            <p>Hold to see subjects</p>
+            <div id="details-subjects-content" class="details-subjects-content">
+              <ul>
+                <li>Autobiographical fiction</li>
+                <li>Bildungsromans</li>
+                <li>Domestic fiction</li>
+                <li>Family life – New England -- Fiction</li>
+                <li>March family (Fictitious characters) – Fiction</li>
+                <li>Mothers and daughters – Fiction</li>
+                <li>New England – Fiction</li>
+                <li>Sisters – Fiction</li>
+                <li>Young women – Fiction</li>
+              </ul>
+            </div>
+          </div>
+          <div class="details-buttons">
+            <div class="dropdown">
+              <button id="details-downloads-button" class="dropdown-button">
+                Download ⮟
+              </button>
+              <div id="details-downloads-content" class="dropdown-content">
+                <a href="https://www.gutenberg.org/ebooks/2701.kf8.images"
+                  >MOBI</a
+                >
+                <a href="https://www.gutenberg.org/ebooks/2701.epub3.images"
+                  >EPUB</a
+                >
+                <a href="https://www.gutenberg.org/files/2701/2701-0.txt"
+                  >TXT</a
+                >
+              </div>
+            </div>
+            <div class="dropdown">
+              <button id="details-read-button" class="dropdown-button">
+                Read Online ⮟
+              </button>
+              <div id="details-read-content" class="dropdown-content">
+                <a href="https://www.gutenberg.org/ebooks/2701.kf8.images"
+                  >HTML5</a
+                >
+                <a href="https://www.gutenberg.org/files/2701/2701-h/2701-h.htm"
+                  >Plain HTML</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://unpkg.com/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
