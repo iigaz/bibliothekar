@@ -218,7 +218,7 @@ function createBookDetails(_book) {
                 details_downloads_content.innerHTML +=
                     '<a target="_blank" href="' +
                     _book.formats[format] +
-                    '">TXT (zip)</a>';
+                    '">ZIP</a>';
             } else if (_book.formats[format].endsWith(".txt.utf-8")) {
                 details_downloads_content.innerHTML +=
                     '<a target="_blank" href="' +
