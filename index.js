@@ -347,7 +347,6 @@ function search() {
 }
 
 function initialize() {
-    feather.replace();
     setLoadMore(false);
     setLoader(true);
     setKnownLanguages(knownLanguages);
