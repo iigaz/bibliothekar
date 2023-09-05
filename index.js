@@ -155,7 +155,7 @@ function createBookDetails(_book) {
                         (author.birth_year && author.death_year
                             ? " (" +
                               author.birth_year +
-                              " - " +
+                              " – " +
                               author.death_year +
                               ")"
                             : author.birth_year
@@ -175,7 +175,7 @@ function createBookDetails(_book) {
                         (author.birth_year && author.death_year
                             ? " (" +
                               author.birth_year +
-                              " - " +
+                              " – " +
                               author.death_year +
                               ")"
                             : author.birth_year
