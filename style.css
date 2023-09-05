@@ -352,14 +352,15 @@ input[type="checkbox"] {
   text-decoration: none;
   cursor: auto;
   position: absolute;
-  transform: translateY(-60%);
+  transform: translateY(-100%);
   padding: 1vw;
   border-radius: 10px;
   visibility: hidden;
   opacity: 0;
   background: var(--background-primary);
   z-index: 1;
-  width: 20vw;
+  width: 40vh;
+  height: 100%
   transition-delay: 0s;
   text-align: left;
   box-shadow: var(--shadow-pressed);
