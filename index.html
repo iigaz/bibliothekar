@@ -35,7 +35,12 @@
             <option value="sv">Swedish</option>
             <option value="tl">Tagalog</option>
           </select>
-          <input class="search-box" placeholder="Search..." id="search-box" />
+          <input
+            class="search-box"
+            placeholder="Search..."
+            id="search-box"
+            type="search"
+          />
           <select class="search-type" id="search-type">
             <option value="title">Titles and Authors</option>
             <option value="topic">Topics</option>
@@ -55,8 +60,11 @@
           Load more...
         </button>
       </div>
+      <!-- <div class="loader" id="loader">
+           <img src="images/loading.gif" alt="Loading..." />
+           </div> -->
       <div class="loader" id="loader">
-        <img src="images/loading.gif" alt="Loading..." />
+        <div class="loader-wrapper"><div class="loader-spinner"></div></div>
       </div>
     </main>
     <footer>
@@ -68,21 +76,6 @@
       <p>
         Also check out
         <a href="https://github.com/Pool-Of-Tears/Myne">Myne</a> for Android
-      </p>
-      <p>
-        <a
-          href="https://commons.wikimedia.org/wiki/File:Book_with_Lens_Flat_Icon_GIF_Animation.gif"
-        >
-          Book with Lens Flat Icon GIF Animation.gif
-        </a>
-        from
-        <a href="https://commons.wikimedia.org/wiki/Main_Page">
-          Wikimedia Commons
-        </a>
-        by <a href="https://videoplasty.com/"> Videoplasty.com </a>,
-        <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">
-          CC-BY-SA 4.0
-        </a>
       </p>
     </footer>
     <div class="modal modal-closed">

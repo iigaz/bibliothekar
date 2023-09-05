@@ -388,7 +388,7 @@ function initialize() {
         }
     });
     removeBooks();
-    loadBooks("https://gutendex.com/books?copyright=false");
+    // loadBooks("https://gutendex.com/books?copyright=false");
 }
 
 initialize();
