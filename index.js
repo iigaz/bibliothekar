@@ -347,7 +347,6 @@ function search() {
 }
 
 function initialize() {
-    feather.replace();
     setLoadMore(false);
     setLoader(true);
     setKnownLanguages(knownLanguages);
@@ -388,7 +387,7 @@ function initialize() {
         }
     });
     removeBooks();
-    // loadBooks("https://gutendex.com/books?copyright=false");
+    loadBooks("https://gutendex.com/books?copyright=false");
 }
 
 initialize();

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Pacifico&family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&family=Montserrat&family=Nunito:wght@300&family=Pacifico&display=swap");
 
 :root {
   --shadow-offset: 3px;
@@ -25,11 +25,15 @@
   --foreground-primary: #31344b;
   --foreground-secondary: #888a90;
   --foreground-tetriary: #444444;
+  --font-text: "Montserrat", sans-serif;
+  --font-title: "Cinzel", serif;
+  --font-ui: "Nunito", sans-serif;
+  --font-cursive: "Pacifico", cursive;
 }
 
 * {
   transition: all 0.5s ease-in-out;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-text);
 }
 
 body {
@@ -75,7 +79,7 @@ header {
 header h1 {
   font-size: 14pt;
   margin-bottom: 0;
-  font-family: "Cinzel", serif;
+  font-family: var(--font-title);
 }
 
 header h3 {
@@ -151,7 +155,6 @@ header h3 {
 
 .details-cover:hover {
   transform: scale(110%);
-  /* box-shadow: 0 0 10px -1px black; */
   box-shadow: 0 0 calc(var(--shadow-blur) * 2) var(--shadow-dark-color),
     var(--shadow-bulged-inset);
 }
@@ -183,7 +186,7 @@ header h3 {
 
 .details-desc h1 {
   font-size: 16pt;
-  font-family: "Cinzel", cursive;
+  font-family: var(--font-title);
 }
 
 .details-description {
@@ -268,16 +271,16 @@ header h3 {
   margin-top: 50px;
 }
 
-.search-button {
-  margin: 5px;
-  padding: 5px;
-}
+/* .search-button { */
+/*   margin: 5px; */
+/*   padding: 5px; */
+/* } */
 
 select {
   background: none;
-  padding: 7px;
+  padding: 10px;
   margin: 5px;
-  font-family: "Roboto Slab", serif;
+  font-family: var(--font-ui);
   cursor: pointer;
   border: none;
   border-radius: 50px;
@@ -298,10 +301,11 @@ select:hover {
 
 .search-checkbox-body {
   border-radius: 50px;
-  padding: 5px;
-  font-family: "Roboto Slab", serif;
+  padding: 10px;
+  font-family: var(--font-ui);
   background: var(--background-primary);
   box-shadow: var(--shadow-bulged);
+  font-size: 10pt;
 }
 
 input[type="checkbox"] {
@@ -320,9 +324,9 @@ input[type="checkbox"] {
 
 input[type="search"] {
   background: none;
-  padding: 5px 10px;
-  font-size: 12pt;
-  font-family: "Roboto Slab", serif;
+  padding: 10px;
+  font-size: 10pt;
+  font-family: var(--font-ui);
   border: none;
   border-radius: 50px;
   background: var(--background-primary);
@@ -336,11 +340,6 @@ input[type="search"]:hover {
 input[type="search"]:focus {
   outline: none;
   box-shadow: var(--shadow-pressed);
-}
-
-.feather {
-  width: 18px;
-  height: 18px;
 }
 
 .book-desc {
@@ -361,7 +360,7 @@ input[type="search"]:focus {
 .book-desc h1 {
   font-size: 14pt;
   font-weight: bold;
-  font-family: "Cinzel", cursive;
+  font-family: var(--font-title);
 }
 
 .book-desc p {
@@ -399,7 +398,7 @@ input[type="search"]:focus {
 .book img,
 .details-cover-image {
   text-align: center;
-  font-family: "Pacifico", cursive;
+  font-family: var(--font-cursive);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,7 +428,7 @@ button {
   padding: 10px;
   transition-duration: 0.1s;
   cursor: pointer;
-  font-family: "Roboto Slab", serif;
+  font-family: var(--font-ui);
   border: none;
   border-radius: 50px;
   background: var(--background-primary);
