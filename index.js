@@ -75,38 +75,6 @@ const knownLanguages = {
     yi: "Yiddish",
 };
 
-//// Gutenberg does not support CORS headers, which prevents
-//// this script from requesting it in the browser
-
-// function getKnownLanguages() {
-//     xhr2 = new XMLHttpRequest();
-//     xhr2.open("GET", "https://www.gutenberg.org/ebooks/", false);
-//     xhr2.send();
-//     parser = new DOMParser();
-//     dom = parser.parseFromString(xhr2.responseText, "text/html");
-//     let o = Object.fromEntries(
-//         Array.from(
-//             dom
-//                 .getElementsByClassName("pgdbnavbar")[0]
-//                 .getElementsByTagName("p")
-//         )
-//             .filter((paragraph) => paragraph.innerText.startsWith("Languages"))
-//             .map((paragraph) =>
-//                 Array.from(paragraph.getElementsByTagName("a")).map((link) => [
-//                     link.href.split("/").slice(-1)[0],
-//                     link.title,
-//                 ])
-//             )
-//             .flat()
-//     );
-//     let sorted = Object.keys(o).sort(
-//         (a, b) => Number(o[a].match(/\d+/)[0]) < Number(o[b].match(/\d+/)[0])
-//     );
-//     return Object.fromEntries(
-//         sorted.map((lang) => [lang, o[lang].split(" ").slice(0, -1).join(" ")])
-//     );
-// }
-
 function setKnownLanguages(knownLanguages) {
     let search_lang = document.getElementById("search-lang");
     search_lang.innerHTML = '<option value="">Any Language</option>';
